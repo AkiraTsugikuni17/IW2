@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livros | Meu Mundo Imaginário</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/Logo.png" type="image/png">
+  <link rel="stylesheet" href="./css/livros.css">
+</head>
+<body>
+
+<header>
+    <img src="./img/Logo 2.png" alt="Logo do site" width="50" />
+    <h1>Meu Mundo Imaginário</h1>
+    <nav>
+      <a href="./index.html">Início</a>
+      <a href="#">Livros</a>
+      <a href="./manga.html">Mangás</a>
+      <a href="./escrevendo.html">Escrevendo</a>
+      <a href="./ideia.html">Ideias</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Descubra Novos Mundos</h1>
+      <p>Explore nossas obras e mergulhe em histórias que encantam e inspiram.</p>
+    </section>
+
+  <section class="destaques">
+    <h2>Destaques</h2>
+    <div class="livros-grid">
+    <div class="livro">
+    <img src="./img/Um Café, Um Amor e Você.jpeg" alt="Capa do Livro 1">
+    <h3>Um Café,Um Amor e Você</h3>
+    <p>Um romance doce, cheio de emoção e leveza, perfeito para quem acredita no amor que acontece nos detalhes.</p>
+    </div>
+
+    <div class="livro">
+    <img src="./img/Entre Silencios e Segredos.png" alt="Capa do Livro 2">
+    <h3>Entre Silêncios e Segredos</h3>
+    <p>Uma história tocante sobre segredos guardados e silêncios que gritam por amor e compreensão.</p>
+    </div>
+
+    <div class="livro">
+    <img src="./img/Luz no Vale da Sombra.png" alt="Capa do Livro 3">
+    <h3>Luz no Vale da Sombra</h3>
+    <p>Uma jornada espiritual em meio às dores da vida, guiada pela fé e esperança.</p>
+    </div>
+
+        <!-- Adicione mais livros conforme necessário -->
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2>Categorias</h2>
+      <ul>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Cristão</a></li>
+        <li><a href="#">Aventura</a></li>
+        <li><a href="#">Infantil</a></li>
+        <li><a href="#">Fantasia</a></li>
+        <li><a href="#">Ficçao cientifica</a></li>
+      </ul>
+    </section>
+
+    <section class="galeria">
+      <h2>Galeria</h2>
+      <div class="galeria-grid">
+        <img src="./img/galeria1.jpg" alt="Imagem relacionada ao livro">
+        <img src="./img/galeria2.jpg" alt="Imagem relacionada ao livro">
+        <!-- Adicione mais imagens conforme necessário -->
+      </div>
+    </section>
+  </main>
+<div class="book-carousel-container">
+    <h3>Romance</h3>
+    <div class="carousel-wrapper">
+      <button class="arrow left" onclick="scrollCarousel('.-carousel', -1)">&#8249;</button>
+      <div class="carousel" id=".-carousel">
+        <div class="book-card">
+          <img src="./img/Um Café, Um Amor e Você.jpeg" alt="Capa do Livro">
+  <h4>Um Café, Um Amor e Você</h4>
+  <p class="genre">Romance</p>
+  <p class="price">R$ 16,99</p>
+  <p class="synopsis">Um romance doce, cheio de emoção e leveza, perfeito para quem acredita no amor que acontece nos detalhes.</p>
+  <a href="./Um Café,....html" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/Entre Silencios e Segredos.png" alt="Capa do Livro">
+          <h4>Entre Silencios e Segredos.png</h4>
+          <p class="genre">Romance</p>
+          <p class="price">R$ 15,99</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/Entre Dois Mundos.png" alt="Capa do Livro">
+          <h4>Entre Dois Mundos.png</h4>
+          <p class="genre">Romance</p>
+          <p class="price">R$ 10,99</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        <!-- Adicione mais cards conforme necessário -->
+      </div>
+      <button class="arrow right" onclick="scrollCarousel('.-carousel', 1)">&#8250;</button>
+    </div>
+  </div>
+  <div class="book-carousel-container">
+    <h3>Cristão</h3>
+    <div class="carousel-wrapper">
+      <button class="arrow left" onclick="scrollCarousel('.-carousel', -1)">&#8249;</button>
+      <div class="carousel" id=".-carousel">
+        <div class="book-card">
+          <img src="./img/Luz no Vale da Sombra.png" alt="Capa do Livro">
+          <h4>Luz no Vale da Sombra.png</h4>
+          <p class="genre">Cristão</p>
+          <p class="price">R$ 14,90</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <!-- Adicione mais cards conforme necessário -->
+      </div>
+      <button class="arrow right" onclick="scrollCarousel('.-carousel', 1)">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="book-carousel-container">
+    <h3>Aventura</h3>
+    <div class="carousel-wrapper">
+      <button class="arrow left" onclick="scrollCarousel('.-carousel', -1)">&#8249;</button>
+      <div class="carousel" id=".-carousel">
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <!-- Adicione mais cards conforme necessário -->
+      </div>
+      <button class="arrow right" onclick="scrollCarousel('.-carousel', 1)">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="book-carousel-container">
+    <h3>Infantil</h3>
+    <div class="carousel-wrapper">
+      <button class="arrow left" onclick="scrollCarousel('.-carousel', -1)">&#8249;</button>
+      <div class="carousel" id=".-carousel">
+      <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <!-- Adicione mais cards conforme necessário -->
+      </div>
+      <button class="arrow right" onclick="scrollCarousel('.-carousel', 1)">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="book-carousel-container">
+    <h3>Fantasia</h3>
+    <div class="carousel-wrapper">
+      <button class="arrow left" onclick="scrollCarousel('.-carousel', -1)">&#8249;</button>
+      <div class="carousel" id=".-carousel">
+       <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <!-- Adicione mais cards conforme necessário -->
+      </div>
+      <button class="arrow right" onclick="scrollCarousel('.-carousel', 1)">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="book-carousel-container">
+    <h3>Ficçao Cientifica</h3>
+    <div class="carousel-wrapper">
+      <button class="arrow left" onclick="scrollCarousel('.-carousel', -1)">&#8249;</button>
+      <div class="carousel" id=".-carousel">
+      <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <div class="book-card">
+          <img src="./img/em breve.jpg" alt="Capa do Livro">
+          <h4>Nome</h4>
+          <p class="genre">Genero</p>
+          <p class="price">R$</p>
+          <p class="synopsis">em breve</p>
+          <a href="https://linkparacompra.com" class="buy-button" target="_blank">Comprar</a>
+        </div>
+        <!-- Adicione mais cards conforme necessário -->
+      </div>
+      <button class="arrow right" onclick="scrollCarousel('.-carousel', 1)">&#8250;</button>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Meu Mundo Imaginário — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
