@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entre Dois Mundos | Meu Mundo Imaginário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #6C5CE7;
+      --accent: #00CEC9;
+      --background: #fdf5e6;
+      --text: #2d3436;
+      --btn: #6C5CE7;
+      --btn-hover: #4B4AE2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .produto {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @media(min-width: 768px) {
+      .produto {
+        flex-direction: row;
+      }
+    }
+
+    .imagem-livro img {
+      max-width: 240px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .detalhes {
+      flex: 1;
+    }
+
+    .detalhes h1 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .detalhes p.autor {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .preco {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin: 1rem 0;
+    }
+
+    .botao-comprar {
+      background-color: var(--btn);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .botao-comprar:hover {
+      background-color: var(--btn-hover);
+    }
+
+    .descricao {
+      margin-top: 2rem;
+    }
+
+    .info-tecnica {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .info-tecnica h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .info-tecnica ul {
+      list-style: none;
+    }
+
+    .info-tecnica li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="produto">
+      <div class="imagem-livro">
+        <img src="./img/Entre Dois Mundos.png" alt="Capa do livro Entre Dois Mundos">
+      </div>
+      <div class="detalhes">
+        <h1>Entre Dois Mundos</h1>
+        <p class="autor">Por Eloá Sinclair</p>
+        <p class="preco">R$ 10,99</p>
+        <a href="https://pay.kiwify.com.br/4pQev62" target="_blank" class="botao-comprar">Comprar Agora</a>
+        <div class="descricao">
+          <p>E se seu coração pertencesse a dois lugares… e a nenhum ao mesmo tempo?
+          Em "Entre Dois Mundos", realidade e fantasia se entrelaçam em uma jornada de descobertas, escolhas e identidade. A protagonista vive dividida entre dois universos — um que conhece bem, feito de rotinas e expectativas, e outro que a chama com promessas de magia, liberdade e perigo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-tecnica">
+      <h2>Informações Técnicas</h2>
+      <ul>
+        <li><strong>Editora:</strong> Meu Mundo Imaginário</li>
+        <li><strong>Ano de publicação:</strong> 2025</li>
+        <li><strong>Páginas:</strong> 52</li>
+        <li><strong>Formato:</strong> Digital (PDF)</li>
+        <li><strong>Gênero:</strong> Romance</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livraria | Meu Mundo Imaginário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6C5CE7;
+      --secondary: #00CEC9;
+      --neutral: #F5F5F5;
+      --text: #2D3436;
+      --background: var(--neutral);
+      --card-bg: #fff;
+      --highlight: #4b2e20;
+    }
+
+    body.dark {
+      --background: #1e1e1e;
+      --text: #f0f0f0;
+      --card-bg: #2c2c2c;
+      --highlight: #ffb773;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a, #darkModeToggle {
+      margin-left: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .hero {
+      background-image: url('./img/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--highlight);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .destaques {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .destaques h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--highlight);
+    }
+
+    .botoes-categorias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .categoria-btn {
+      background-color: #734b6d;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .categoria-btn:hover {
+      background-color: #9b5c89;
+    }
+
+    .livros-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .livro {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 250px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .livro img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .livro h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: var(--highlight);
+    }
+
+    .livro p {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .livro .genre {
+      font-style: italic;
+      color: #ffb773;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .livro .price {
+      font-weight: bold;
+      color: #852507;
+      margin-bottom: 8px;
+    }
+
+    .livro button {
+      background-color: var(--secondary);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .livro button:hover {
+      background-color: #00b5b1;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .livros-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .livro {
+        max-width: 90%;
+      }
+    }
+    .buy-button {
+  color: white;
+  transition: background 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+     <img src="./img/Logo 2.png" alt="Logo do site" width="50" />
+    <h1>Meu Mundo Imaginário</h1>
+    <nav>
+      <a href="./index.html">Início</a>
+      <a href="#">Livros</a>
+      <a href="./manga.html">Mangás</a>
+      <a href="./escrevendo.html">Escrevendo</a>
+      <a href="./ideia.html">Ideias</a>
+      <button id="darkModeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Descubra mundos incríveis</h1>
+    <p>Explore nossa seleção de livros únicos</p>
+  </section>
+
+  <section class="destaques">
+    <h2>Destaques</h2>
+
+    <div class="botoes-categorias">
+      <button class="categoria-btn" data-categoria="romance">Romance</button>
+      <button class="categoria-btn" data-categoria="cristao">Cristão</button>
+      <button class="categoria-btn" data-categoria="aventura">Aventura</button>
+      <button class="categoria-btn" data-categoria="infantil">Infantil</button>
+      <button class="categoria-btn" data-categoria="fantasia">Fantasia</button>
+      <button class="categoria-btn" data-categoria="ficcao">Ficção Científica</button>
+      <button class="categoria-btn" data-categoria="todos">Todos</button>
+    </div>
+
+    <div class="livros-grid">
+      <div class="livro" data-categoria="romance">
+      <img src="./img/Entre Silencios e Segredos.png" alt="Livro Romance" />
+      <h3>Entre Silêncios e Segredos</h3>
+      <span class="genre">Romance</span>
+      <span class="price">R$ 15,99</span>
+      <p>Um romance doce, cheio de emoção e leveza, perfeito para quem acredita no amor que acontece nos detalhes.</p>
+      <button><a href="./entre silencio.html" class="buy-button" target="_blank">Comprar</a></button>
+      </div>
+
+      <div class="livro" data-categoria="romance">
+        <img src="./img/Um Café, Um Amor e Você.jpeg" alt="Livro Romance" />
+        <h3>Um Café,Um Amor e Você</h3>
+        <span class="genre">Romance</span>
+        <span class="price">R$ 16,99</span>
+        <p>Em uma terra desconhecida, coragem é a única esperança.</p>
+        <button><a href="./um cafe.html" class="buy-button" target="_blank">Comprar</a></button>
+      </div>
+      <div class="livro" data-categoria="romance">
+        <img src="./img/Entre Dois Mundos.png" alt="Livro Romance" />
+        <h3>Entre Dois Mundos</h3>
+        <span class="genre">Romance</span>
+        <span class="price">R$ 10,90</span>
+        <p>Dragões, feitiços e segredos ancestrais neste épico fantástico.</p>
+        <button><a href="./entre dois mundos.html" class="buy-button" target="_blank">Comprar</a></button>
+      </div>
+
+      <div class="livro" data-categoria="cristao">
+        <img src="./img/Luz no Vale da Sombra.png" alt="Cristão" />
+        <h3>Luz no Vale da Sombra</h3>
+        <span class="genre">Cristão</span>
+        <span class="price">R$ 14,90</span>
+        <p>Uma jornada espiritual em meio às dores da vida, guiada pela fé e esperança.</p>
+        <button><a href="./luz no vale.html" class="buy-button" target="_blank">Comprar</a></button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Livraria Criativa. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Modo escuro
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+
+    // Filtro de categorias
+    const filtroBtns = document.querySelectorAll('.categoria-btn');
+    const livros = document.querySelectorAll('.livro');
+
+    filtroBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const categoria = btn.getAttribute('data-categoria');
+
+        livros.forEach(livro => {
+          if (categoria === 'todos' || livro.getAttribute('data-categoria') === categoria) {
+            livro.style.display = 'block';
+          } else {
+            livro.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
